@@ -1,0 +1,24 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+    --tipografiaRoboto: 'Roboto', sans-serif;
+    --cuerpoDeTexto: 12px;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentos: 16px;
+    --descripciones: 16px;
+}
+
+body {
+    font-family: var(--tipografiaRoboto);
+    background-color: var(--Amarillo);
+}
+
+a {
+    text-decoration: none;
+}
+

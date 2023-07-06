@@ -5,95 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&family=Raleway:wght@400;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,700&family=Work+Sans:wght@200;400;700&display=swap');
+    </style>
+    <link href="/css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5655ac62e.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
-        <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" width="360">
-        <p>Lugar para poner la barra de busqueda</p>
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
-        <ul>
+<body class="home">
+    <header class="home__header">
+        <img class="home__header--logo-mercado-liebre" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+        <div class="home__header--barra-de-busqueda"><input type="text" placeholder="Buscar productos, marcas"></div>
+        <div class="home__header--lupa"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <ul class="home__header__ul">
             <li><a href="#">Ofertas</a></li>
             <li><a href="#">Tiendras Oficiales</a></li>
             <li><a href="#">Vender</a></li>
             <li><a href="#">Ayuda</a></li>
         </ul>
 
-        <ul>
-            <li><a href="#">Crea tu cuenta</a></li>
-            <li><a href="#">Ingresa</a></li>
-            <li><a href="#">Mis Compras</a></li>
+        <ul class="home__header__ul">
+            <li><a href="#">Crea tu cuenta<i class="fa-regular fa-id-card"></i></a></li>
+            <li><a href="#">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
+            <li><a href="#">Mis Compras<i class="fa-solid fa-basket-shopping"></i></a></li>
         </ul>
-        <img src="/images/img-home-banner.jpg" alt="img-home-banner" width="400">
+        <div class="home__header--burguer-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img class="home__header--banner" src="/images/img-home-banner.jpg" alt="img-home-banner">
     </header>
-    <main>
-        <section>
-            <ul>
+    <main class="home__main">
+        <section class="home__main__section">
+            <ul class="home__main__section__ul">
                 <li>
-                    <h2>Sección: Basado en tu última visita</h2>
+                    <h2>Basado en tu última visita</h2>
                 </li>
 
                 <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" width="360">
-                <p>$6.770<br>
-                    40% OFF<br>
-                    <strong>Cafetera Moulinex</strong>
+                <p><div class="home__main__section__ul-precio">$6.770</div>
+                   <div class="home__main__section__ul-descuento">40% OFF</div>
+                   <div class="home__main__section__ul-descripcion"><strong>Cafetera Moulinex</strong></div>
                 </p>
                 <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019" width="360">
-                <p>$230.000<br>
-                    20% off<br>
-                    <strong>MacBook Pro 2019</strong>
+                <p><div class="home__main__section__ul-precio">$230.000</div>
+                   <div class="home__main__section__ul-descuento">20% off</div>
+                   <div class="home__main__section__ul-descripcion"><strong>MacBook Pro 2019</strong></div>
                 </p>
                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" width="360">
-                <p>$70.500<br>
-                    10% off<br>
-                    <strong>Samsung Galaxy S10</strong><br>
+                <p><div class="home__main__section__ul-precio">$70.500</div>
+                   <div class="home__main__section__ul-descuento">10% off</div>
+                   <div class="home__main__section__ul-descripcion"><strong>Samsung Galaxy S10</strong></div>
                 </p>
                 <img src="/images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung 43" width="360">
-                <p>$23.200<br>
-                    5% off<br>
-                    <strong>SmartTv Samsung 43"</strong>
+                <p><div class="home__main__section__ul-precio">$23.200</div>
+                   <div class="home__main__section__ul-descuento">5% off</div>
+                   <div class="home__main__section__ul-descripcion"><strong>SmartTv Samsung 43"</strong></div>
                 </p>
 
                 <li>
-                    <h2>Sección de Ofertas </h2>
+                    <h2>Ofertas </h2>
                 </li>
                 <img src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" width="360">
-                <p>$6.770<br>
-                    40% OFF<br>
-                    <strong>Cafetera Moulinex</strong>
+                <p><div class="home__main__section__ul-precio">$6.770</div>
+                   <div class="home__main__section__ul-descuento">40% OFF</div>
+                   <div class="home__main__section__ul-descripcion"><strong>Cafetera Moulinex</strong></div>
                 </p>
                 <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019" width="360">
-                <p>$230.000<br>
-                    20% off<br>
-                    <strong>MacBook Pro 2019</strong>
+                <p><div class="home__main__section__ul-precio">$230.000</div>
+                   <div class="home__main__section__ul-descuento">20% off</div>
+                   <div class="home__main__section__ul-descripcion"><strong>MacBook Pro 2019</strong></div>
                 </p>
                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" width="360">
-                <p>$70.500<br>
-                    10% off<br>
-                    <strong>Samsung Galaxy S10</strong><br>
+                <p><div class="home__main__section__ul-precio">$70.500</div>
+                   <div class="home__main__section__ul-descuento">10% off</div>
+                   <div class="home__main__section__ul-descripcion"><strong>Samsung Galaxy S10</strong></div>
                 </p>
                 <img src="/images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung 43" width="360">
-                <p>$23.200<br>
-                    5% off<br>
-                    <strong>SmartTv Samsung 43"</strong>
+                <p><div class="home__main__section__ul-precio">$23.200</div>
+                   <div class="home__main__section__ul-descuento">5% off</div>
+                   <div class="home__main__section__ul-descripcion"><strong>SmartTv Samsung 43"</strong></div>
                 </p>
             </ul>
         </section>
     </main>
-    <footer>
-        <div><b>Pagá con tarjeta o en efectivo</b></div><br>
-        <div>Con Mercado Liebre Cash, tenés cuotas sin</div>
-        <div>interés con tarjeta o efectivo en puntos de </div>
-        <div>pago. ¡Y siempre es seguro!</div><br>
-        <div><b>Envío gratis desde $ 2.500</b></div><br>
-        <div>Solo por estar registrad@ en Mercado Liebre</div>
-        <div>tenés envíos gratis en miles de productos. Es</div> 
-        <div>un beneficio de Mercado Puntos.</div><br>
-        <div><b>Seguridad, de principio a fin</b></div><br>
-        <div>¿No te gusta? ¡Devolvelo! En Mercado Liebre</div>
-        <div>no hay nada que no puedas hacer porque estás</div> 
-        <div>siempre protegid@.</div><br>
-        Copyright © 1999-2020 MercadoLiebre S.R.L.
+    <footer class="home__footer">
+        <div class="home__footer--iconos-sobre-h3"><i class="fa-solid fa-credit-card"></i></div>
+        <h3 class="home__footer__h3">Pagá con tarjeta o en efectivo</h3>
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+            seguro!</p>
+        <div class="home__footer--iconos-sobre-h3"><i class="fa-solid fa-gift"></i></div>
+        <h3 class="home__footer__h3">Envío gratis desde $ 2.500</h3>
+        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+            Mercado Puntos.</p>
+        <div class="home__footer--iconos-sobre-h3"><i class="fa-solid fa-user-shield"></i></div>
+        <h3 class="home__footer__h3">Seguridad, de principio a fin</h3>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estás siempre protegid@.
+        </p>
+        <p class="home__footer-copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
 </body>
 
