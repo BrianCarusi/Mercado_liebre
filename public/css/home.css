@@ -1,98 +1,103 @@
 /* HEADER */
 
 .home__header {
-    background-color:var(--Amarillo);
-    width: 100%;
+    background-color: var(--Amarillo);
+    padding: 20px;
 }
 
 .home__header--logo-mercado-liebre {
-    width: 144px;
-    margin: 25px 0 0 30px;
+    width: 50%;
 }
 
 .home__header--barra-de-busqueda {
+    width: 50%;
     padding: 3px;
     margin: 5px 0 0 10px;
 }
 
 .home__header--lupa {
-    display: inline;
-    padding: 1px;
-    margin-left: 3px;
     background-color: white;
+    color: black;
+    display:block;
     border: solid 1px grey;
     border-radius: 20%;
+    max-width: 17px;
+    max-height: 20px;
+    font-size: 15px;
     box-sizing: content-box;
-    margin-left: 13px
 }
 
-.home__header p {
+.home__header--h2 {
+    font-weight: 400;
     text-align: center;
-    margin: 10px 0 15px 50px;
-    font-size: var(--cuerpoDeTexto);
-}
-
-.home__header__div {
-    margin-bottom: 30px;
-}
-
-.home__header__div__ul {
-    list-style-type: none;
-    padding: 0;
-    margin-left: 5px;
+    font-size: small;
+    margin: 20px 0;
 }
 
 .home__header--burguer-menu {
-    background-color: var(--Celeste);
+    background-color: var(--Azul);
     color: white;
-    padding: 8px;
-    margin: 0 auto 30px;
-    display: inline-block;
-    border-radius: 15%;
-    margin-left: 160px;
-    /* text-align:center; */
+    display: block;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    line-height: 0.7;
 }
 
-.home__header--banner {
-    margin-top: 10px;
-    width: 100vw;
+.home__header__nav {
+    display: none;
 }
+
+.home__header__nav ul {
+    list-style: none;
+}
+
 
 /* MAIN */
 
 .home__main {
     text-align: center;
-    width: 90%;
-    background-color: lightgrey;
+    width: 100%;
+    background-color: #ebebeb;
 }
 
-.home__main__ul {
+.home__main--banner {
+    width: 100vw;
+}
+
+.home__main__section {
     list-style-type: none;
 }
 
-.home__main__ul h2 {
+.home__main__h2 {
     font-size: var(--titulares);
 }
 
-.home__main__ul__article {
+.home__main__section__article {
     margin-bottom: 10px;
 }
 
-.home__main__ul__div--box {
+.home__main__section__div--box {
     border-top: 1px solid #ebebeb;
     padding: 15px;
-    margin-left: 10px;
+    margin: 10px 10px 0 10px;
+    background-color: white;
 }
 
-.home__main__ul__div--precio {
+
+.home__main__section__div--precio {
     font-size: var(--precio);
 }
 
-.home__main__ul__div--descuento {
+.home__main__section__div--descuento {
     font-size: var(--descuentos);
 }
 
-.home__main__ul__div--descripcion {
+.home__main__section__div--descripcion {
     font-size: var(--descripciones);
 }
 
@@ -113,7 +118,7 @@
 .home__footer__h3 {
     margin: 0;
 }
- 
+
 .home__footer p {
     margin-top: 0;
     margin-bottom: 40px;
@@ -131,36 +136,95 @@
     }
 
     /* MAIN */
-    .home__main__ul--img {
+    .home__main__section--img {
         width: 100%;
     }
-    .home__main__ul__div--descripcion {
+    .home__main__section__div--descripcion {
         display: none;
     }
     
 }
 
-@media (min-width: 426px) {
+
+@media (min-width:426px) {
+
     /* HEADER */
 
-    /* MAIN */
-    .home__main__ul--img {
-        width: 375px;
+    .home__header--top-bar {
+        display: flex;
+        justify-content: space-between;
     }
-    .home__main__ul__div--box {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+
+    .home__header--h2 {
+        max-width: 350px;
+        text-align: right;
     }
 
     .home__header--burguer-menu {
         display: none;
     }
-    /* FOOOTER */    
-    
+
+    .home__header__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home__header__nav ul {
+        display: flex;
+    }
+
+    .home__header__nav li {
+        display: flex;
+        margin: 0 5px;
+    }
+
+    /* MAIN */
+
+    .home__main__section--img {
+        width: 375px;
+    }
+    .home__main__section__div--box {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+
+
 }
 
-@media (min-width: 769px) {
+
+@media (min-width:767px) {
     /* HEADER */
+
+    .home__header--top-bar,
+    .home__header__nav {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .home__header--h2 {
+        max-width: none;
+    }
+
+    .home__header__nav {
+        margin-top: 20px;
+    }
+
+    .home__header__nav li {
+        display: flex;
+        margin: 0 10px;
+    }
+
+    .home__header__nav a {
+        font-size: 16px;
+    }
+
     /* MAIN */
-    /* FOOOTER */
-    
+/* 
+    .home__main__section {
+        display: flex;
+        flex-direction: row;
+        width: 48vw;
+    } */
+
+
+
 }
