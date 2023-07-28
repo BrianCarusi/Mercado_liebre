@@ -5,6 +5,11 @@
     padding: 20px;
 }
 
+.home__header--top-bar {
+    display: flex;
+    flex-direction: column;
+}
+
 .home__header--logo-mercado-liebre {
     width: 50%;
 }
@@ -12,13 +17,12 @@
 .home__header--barra-de-busqueda {
     width: 50%;
     padding: 3px;
-    margin: 5px 0 0 10px;
 }
 
 .home__header--lupa {
     background-color: white;
     color: black;
-    display:block;
+    display: block;
     border: solid 1px grey;
     border-radius: 20%;
     max-width: 17px;
@@ -70,7 +74,10 @@
 }
 
 .home__main__section {
-    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .home__main__h2 {
@@ -129,7 +136,8 @@
     text-align: left;
 }
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
+
     /* HEADER */
     .home__header__div {
         display: none;
@@ -139,10 +147,11 @@
     .home__main__section--img {
         width: 100%;
     }
+
     .home__main__section__div--descripcion {
         display: none;
     }
-    
+
 }
 
 
@@ -152,7 +161,13 @@
 
     .home__header--top-bar {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+    }
+
+    .home__header--barra-de-busqueda {
+        display: flex;
+        align-items: center;
     }
 
     .home__header--h2 {
@@ -180,11 +195,17 @@
 
     /* MAIN */
 
+    .home__main__section {
+        display: flex;
+        flex-direction: row;
+    }    
+
     .home__main__section--img {
-        width: 375px;
+        width: 100%;
     }
+
     .home__main__section__div--box {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
 
@@ -194,10 +215,29 @@
 @media (min-width:767px) {
     /* HEADER */
 
-    .home__header--top-bar,
+    .home__header--top-bar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
     .home__header__nav {
         max-width: 1200px;
         margin: auto;
+    }
+
+    .home__header--logo-mercado-liebre {
+        width: 200px;
+    }
+
+    .home__header--barra-de-busqueda input{
+        border: none;
+        border-radius: 3px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home__header--lupa {
+        display: none;
     }
 
     .home__header--h2 {
@@ -218,13 +258,31 @@
     }
 
     /* MAIN */
-/* 
+    
     .home__main__section {
         display: flex;
         flex-direction: row;
-        width: 48vw;
-    } */
+    }
+
+    .home__main__section__div--box {
+        width: 47vw;
+    }
+
+    .home__main__section--img {
+        width: 100%;
+    }
 
 
 
+}
+
+@media (min-width:1024px) {
+
+    .home__main__section {
+        display: flex;
+    }
+
+    .home__main__section__div--box {
+        width: 23vw;
+    }
 }

@@ -1,0 +1,71 @@
+/* HEADER */
+
+/* MAIN */
+body { 
+    background-color: #ebebeb;
+}
+
+.register__main__form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+}
+
+
+.register__main__form__div {
+    margin-bottom: 30px;
+}
+
+.register__main__form__div--barra{
+    width: 100%;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    width: 90vw;
+}
+
+.register__main__form h4 {
+    display: flex;
+    text-align: end;
+    padding: 10px 0;
+}
+
+.register__main__form__div--radio {
+    display: flex;
+    gap:30px;
+}
+
+.register__main__form__div--intereses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.register__main__form__div--intereses-checkbox {
+    display: flex;
+
+}
+
+.register__main--button-file {
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.register__main--button {
+    
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    width: 30vw;
+    background-color: var(--Celeste);
+    color: white;
+    font-weight: bold;
+}
+
+
+/* FOOTER */

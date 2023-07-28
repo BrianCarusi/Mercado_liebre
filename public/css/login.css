@@ -1,0 +1,31 @@
+
+/* HEADER */
+
+/* MAIN */
+
+.login__main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.login__main__div {
+   padding: 20px;
+   text-align: center;
+}
+
+.login__main__div--barra{
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    width: 70vw;
+}
+
+.login__main--send-button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    width: 70vw;
+    background-color: var(--Celeste);
+    color: white;
+    font-weight: bold;
+}
