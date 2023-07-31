@@ -1,5 +1,3 @@
-/* HEADER */
-
 /* MAIN */
 body { 
     background-color: #ebebeb;
@@ -10,7 +8,6 @@ body {
     flex-direction: column;
     padding: 20px 15px;
 }
-
 
 .register__main__form__div {
     margin-bottom: 30px;
@@ -68,4 +65,3 @@ body {
 }
 
 
-/* FOOTER */
